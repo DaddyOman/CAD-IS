@@ -1,0 +1,142 @@
+<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+    <div class="sb-sidenav-menu">
+        <div class="nav">
+            <div class="sb-sidenav-menu-heading">Employee</div>
+            <a class="nav-link" href="{{ url_for('dashboard') }}">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                Dashboard
+            </a>
+            <div class="sb-sidenav-menu-heading">Operations</div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOffice" aria-expanded="false" aria-controls="collapseOffice">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                Client Services
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseOffice" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="appearances.html">Appearance Certificates</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePrograms" aria-expanded="false" aria-controls="collapsePrograms">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-people-line"></i></div>
+                Special Programs
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapsePrograms" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="funerals.html">Funeral/Burial Assistance</a>
+                    <a class="nav-link" href="communities.html">Community Assistance</a>
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAncillaries" aria-expanded="false" aria-controls="pagesCollapseAncillaries">
+                        Ancillary Services
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseAncillaries" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionAncillaries">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="casestudies.html">Case Studies</a>
+                            <a class="nav-link" href="receivers.html">Recipient Certificates</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <div class="sb-sidenav-menu-heading">Administration and Finance</div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAdministrative" aria-expanded="false" aria-controls="collapseAdministrative">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-list-check"></i></div>
+                Administrative
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseAdministrative" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="orders.html">Office Orders</a>
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseReports" aria-expanded="false" aria-controls="pagesCollapseReports">
+                        Mandatory Submissions
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseReports" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionReports">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="charter.html">Citizen's Charter</a>
+                            <a class="nav-link" href="reports.html">Accomplishment Reports</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseFinance" aria-expanded="false" aria-controls="collapseFinance">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                Finance
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseFinance" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseBudget" aria-expanded="false" aria-controls="pagesCollapseBudget">
+                        Budget
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseBudget" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionBudget">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                            <a class="nav-link" href="structure.html">Structure</a>
+                            <a class="nav-link" href="bed.html">BED</a>
+                            <a class="nav-link" href="ppmp.html">PPMP</a>
+                            <a class="nav-link" href="fpra.html">FPRA</a>
+                        </nav>
+                    </div>
+                    <a class="nav-link" href="obligations.html">Obligations</a>
+                    <a class="nav-link" href="purchases.html">Purchases</a>
+                    <a class="nav-link" href="disbursements.html">Disbursements</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePersonnel" aria-expanded="false" aria-controls="collapsePersonnel">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-building-user"></i></div>
+                Personnel
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapsePersonnel" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAttendance" aria-expanded="false" aria-controls="pagesCollapseAttendance">
+                        Attendance
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseAttendance" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionAttendance">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="flagceremonies.html">Flag Ceremonies</a>
+                            <a class="nav-link" href="leaves.html">Leave Applications</a>
+                        </nav>
+                    </div>
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseMandatories" aria-expanded="false" aria-controls="pagesCollapseMandatories">
+                        Mandatory Submissions
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseMandatories" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionMandatories">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="pds.html">PDS</a>
+                            <a class="nav-link" href="saln.html">SALN</a>
+                            <a class="nav-link" href="spms.html">SPMS</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseRecords" aria-expanded="false" aria-controls="collapseRecords">
+                <div class="sb-nav-link-icon"><i class="fa-solid fa-folder"></i></div>
+                Records
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseRecords" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseCorrespondence" aria-expanded="false" aria-controls="pagesCollapseCorrespondence">
+                        Correspondence
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseCorrespondence" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionCorrespondence">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="incomings.html">Incomings</a>
+                            <a class="nav-link" href="outgoings.html">Outgoings</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="sb-sidenav-footer">
+        <div class="small">Logged in as:</div>
+        Name of Employee
+    </div>
+</nav>
