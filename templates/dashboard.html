@@ -5,19 +5,82 @@
 <ol class="breadcrumb mb-4">
     <li class="breadcrumb-item active">Dashboard</li>
 </ol>
+
 <div class="row">
-  <div class="col">
-    <div class="h3">Profile</div>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="h3">Attendance</div>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="h3">Mandatory Submissions</div>
-  </div>
+    <div class="col-xl-4 col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="d-flex align-content-center flex-wrap">
+                    <div class="col-md-4">
+                        <img src="{{ url_for('static', filename='/img/profiles/PGP070401126.jpg') }}" class="img-fluid rounded-0" alt="Profile Picture">
+                    </div>
+                    <div class="col-md-8">
+                        <a href="#" class="text-decoration-none" title="View profile">
+                            <div class="h2">NORMAN A. LIBIRAN</div>
+                        </a>
+                        <hr>
+                        <p class="lh-sm">
+                            Administrative Assistant V (Data Controller III)<br>
+                            Community Affairs<br>
+                            <small class="text-muted">Regular</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center text-primary h2">Tasks</h5><hr>
+              <p class="card-text">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-outline-secondary text-dark" type="button">Pending</button>
+                  <button class="btn btn-outline-secondary text-dark" type="button">Finished</button>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-primary h3">Attendance</h5><hr>
+              <p class="card-text">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-outline-secondary text-dark" type="button">Flag Ceremonies</button>
+                  <button class="btn btn-outline-secondary text-dark" type="button">Mandatory Activities</button>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center text-primary h3">Submissions</h5><hr>
+              <p class="card-text">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-outline-secondary text-dark" type="button">PDS</button>
+                  <button class="btn btn-outline-secondary text-dark" type="button">SALN</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      SPMS
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Target</a></li>
+                      <li><a class="dropdown-item" href="#">Accomplishment</a></li>
+                      <li><a class="dropdown-item" href="#">IDP</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 {% endblock %}
